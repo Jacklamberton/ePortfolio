@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewpoint"
+		  content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS 8th Tutorial.css"/>
+	<script>
+	function myFunction(imgs) {
+	  var expandImg = document.getElementById("expandedImg");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+		function myFunction2(imgs) {
+	  var expandImg = document.getElementById("expandedImg2");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext2");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";		
+	}
+		function myFunction3(imgs) {
+	  var expandImg = document.getElementById("expandedImg3");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext3");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+			function myFunction4(imgs) {
+	  var expandImg = document.getElementById("expandedImg4");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext4");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+		function myFunction5(imgs) {
+	  var expandImg = document.getElementById("expandedImg5");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext5");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+		function myFunction6(imgs) {
+	  var expandImg = document.getElementById("expandedImg6");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext6");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+			function myFunction7(imgs) {
+	  var expandImg = document.getElementById("expandedImg7");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext7");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+			function myFunction8(imgs) {
+
+	  var expandImg = document.getElementById("expandedImg8");
+	  // Get the image text
+	  var imgText = document.getElementById("imgtext8");
+	  // Use the same src in the expanded image as the image being clicked on from the grid
+	  expandImg.src = imgs.src;
+	  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+	  imgText.innerHTML = imgs.alt;
+	  // Show the container element (hidden with CSS)
+	  expandImg.parentElement.style.display = "block";
+	}
+			
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		
+	<img src="Luna's Litter.jpg" width="150px" />
+	<div class="title">
+		<h1>Jack Lamberton</h1>
+		<p class="subtitle">ePortfolio</p>
+	</div>
+		
+	</header>
+	
+	<aside>
+		<ul>
+<li class="activeLink menuItem"><a href="index.html">About Me</a></li>
+			<li class="menuItem"><a href="Skills.html">Skills</a></li>
+			<li class="menuItem"><a href="Experiences.html">Experiences</a></li>
+			<li class="menuItem"><a href="Achievements.html">Achievements</a></li>
+			<li class="menuItem"><a href="Photo Gallery.html">Photo Gallery</a></li>
+			
+		</ul>
+		
+	</aside>
+	
+<article>
+	
+		<h2>Photo Gallery</h2>
+		
+	<p>Click on a image from bottom row for more images to appear.</p>
+		<strong>The Dogs - Willow, Molly and Ollie</strong>
+<div class="row">
+  <div class="column">
+    <img src="Dogs.jpg" style="width:100%" alt="Molly, Ollie and Willow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Molly and Ollie.jpg" style="width:100%" alt="Molly and Ollie" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Molly.jpg" style="width:100%" alt="Molly" onclick="myFunction(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg" style="width:50%">
+	<div id="imgtext"></div>
+</div>
+		
+		<strong>The Cats - Roxy and Luna</strong>
+<div class="row">
+  <div class="column">
+    <img src="Luna 1.jpg" style="width:100%" alt="Luna" onclick="myFunction2(this);">
+  </div>
+  <div class="column">
+    <img src="Luna 2.jpg" style="width:100%" alt="Luna" onclick="myFunction2(this);">
+  </div>
+  <div class="column">
+    <img src="Luna 3.jpg" style="width:100%" alt="Luna" onclick="myFunction2(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg2" style="width:50%">
+	<div id="imgtext2"></div>
+</div>		
+		<strong>The Sheep</strong>
+		<div class="row">
+  <div class="column">
+    <img src="Suffolk Sheep.jpg" style="width:100%" alt="Suffolk Sheep With Lamb" onclick="myFunction3(this);">
+  </div>
+  <div class="column">
+    <img src="Suffolk 2.jpg" style="width:100%" alt="Suffolk Sheep" onclick="myFunction3(this);">
+  </div>
+  <div class="column">
+    <img src="Suffolk And Lamb.jpg" style="width:100%" alt="Suffolk Sheep With Lamb" onclick="myFunction3(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg3" style="width:50%">
+	<div id="imgtext3"></div>
+		<strong>The Cows</strong>
+			<div class="row">
+  <div class="column">
+    <img src="Angus Calves.jpg" style="width:100%" alt="Angus Steers" onclick="myFunction4(this);">
+  </div>
+  <div class="column">
+    <img src="Annabelle.jpg" style="width:100%" alt="Simmential Heifer" onclick="myFunction4(this);">
+  </div>
+  <div class="column">
+    <img src="Belted Galloway.jpg" style="width:100%" alt="Belted Galloway Heifer" onclick="myFunction4(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg4" style="width:50%">
+	<div id="imgtext4"></div>
+		<strong>The Ducks</strong>
+				<div class="row">
+  <div class="column">
+    <img src="Pekin Ducks 2.jpg" style="width:100%" alt="Pekin Ducks" onclick="myFunction5(this);">
+  </div>
+  <div class="column">
+    <img src="Saxony and Pekin Ducks.jpg" style="width:100%" alt="Saxony and Pekin Ducks" onclick="myFunction5(this);">
+  </div>
+  <div class="column">
+    <img src="Pekin Ducks 3.jpg" style="width:100%" alt="Large Group of Pekin Ducks" onclick="myFunction5(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg5" style="width:50%">
+	<div id="imgtext5"></div>
+		<strong>The Chickens</strong>
+				<div class="row">
+  <div class="column">
+    <img src="Light Sussex Chooks.jpg" style="width:100%" alt="Light Sussex Chickens" onclick="myFunction6(this);">
+  </div>
+  <div class="column">
+    <img src="Lavender Sussex Chooks.jpg" style="width:100%" alt="Lavender Sussex Chickens" onclick="myFunction6(this);">
+  </div>
+  <div class="column">
+    <img src="Australorp Chickens.jpg" style="width:100%" alt="Black Australorp Chickens" onclick="myFunction6(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg6" style="width:50%">
+	<div id="imgtext6"></div>
+		<strong>The Goats</strong>
+				<div class="row">
+  <div class="column">
+    <img src="Goat 1.jpg" style="width:100%" alt="Group of Ferel Goat Kids" onclick="myFunction7(this);">
+  </div>
+  <div class="column">
+    <img src="Goat 2.jpg" style="width:100%" alt="Ferrel Doeling" onclick="myFunction7(this);">
+  </div>
+  <div class="column">
+    <img src="Goat 3.jpg" style="width:100%" alt="Ferrel Doeling" onclick="myFunction7(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg7" style="width:50%">
+	<div id="imgtext7"></div>
+		<strong>Wild Life Saved</strong>
+				<div class="row">
+  <div class="column">
+    <img src="Bird.jpg" style="width:100%" alt="Young Bird" onclick="myFunction8(this);">
+  </div>
+  <div class="column">
+    <img src="Bunny.jpg" style="width:100%" alt="Young Hare Kit" onclick="myFunction8(this);">
+  </div>
+  <div class="column">
+    <img src="Bunny 2.jpg" style="width:100%" alt="Young Hare" onclick="myFunction8(this);">
+  </div>
+</div>
+	<div class="container">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	<img id="expandedImg8" style="width:50%">
+	<div id="imgtext8"></div>
+	</div>
+</article>
+	
+	<footer>
+		<p>© Jack Lamberton 2019</p>
+	</footer>
+	
+</body>
+</html>
